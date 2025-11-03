@@ -66,7 +66,7 @@ CREATE TABLE zepto (
 );
 
 ALTER SEQUENCE zepto_sku_id_seq RESTART WITH 1;
-
+```
 ---
 
 ## 🔍 Data Exploration
