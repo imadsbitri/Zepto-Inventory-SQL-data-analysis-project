@@ -113,22 +113,5 @@ These queries simulate real-world e-commerce analytics that a data analyst would
 
 ---
 
-## 📸 Project Screenshots & Sample Results
 
-*(Replace these placeholders with your screenshots of query results or dashboards)*  
-
-![Sample Query 1](images/sample_query_1.png)  
-*Top 10 best-value products*  
-
-![Sample Query 2](images/sample_query_2.png)  
-*Revenue per category*  
-
----
-
-## 🚀 How to Use This Project
-
-1. Clone this repository:
-```bash
-git clone https://github.com/<your-username>/zepto-sql-portfolio.git
-cd zepto-sql-portfolio
 
