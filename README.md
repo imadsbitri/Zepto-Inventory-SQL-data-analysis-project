@@ -111,7 +111,4 @@ After cleaning the data, I executed a set of **business-focused SQL queries** to
 
 These queries simulate real-world e-commerce analytics that a data analyst would perform to support decision-making.
 
----
-
-
 
