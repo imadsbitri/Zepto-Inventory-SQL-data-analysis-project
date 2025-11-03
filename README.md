@@ -66,3 +66,69 @@ CREATE TABLE zepto (
 );
 
 ALTER SEQUENCE zepto_sku_id_seq RESTART WITH 1;
+
+---
+
+## 🔍 Data Exploration
+
+Before analyzing the dataset, I performed **exploratory data analysis (EDA)** to understand its structure and content:
+
+1. **Counted total records** – verified how many SKUs were in the inventory.  
+2. **Viewed sample rows** – checked how product names, categories, and prices are structured.  
+3. **Checked for null values** – identified missing data across key columns such as `name`, `category`, `mrp`, and `availableQuantity`.  
+4. **Distinct product categories** – listed all categories to understand inventory distribution.  
+5. **Stock analysis** – compared in-stock vs out-of-stock products.  
+6. **Duplicate detection** – identified product names appearing multiple times due to different SKUs or packaging variations.  
+
+These steps helped uncover inconsistencies, patterns, and potential issues that needed cleaning before analysis.
+
+---
+
+## 🧹 Data Cleaning
+
+After exploring the dataset, I performed **data cleaning** to ensure accurate analysis:
+
+1. **Removed invalid entries** – deleted products where `mrp` or `discountSellingPrice` was zero.  
+2. **Converted pricing** – changed `mrp` and `discountSellingPrice` from paise to rupees for consistency and readability.  
+3. **Handled missing values** – verified that remaining null values in key columns were addressed or accounted for during analysis.  
+
+This preparation ensured the dataset was ready for **business-driven SQL queries and insights**, simulating real-world e-commerce data cleaning workflows.
+
+---
+
+## 📊 Business Analysis Queries
+
+After cleaning the data, I executed a set of **business-focused SQL queries** to generate actionable insights:
+
+- **Top 10 best-value products** by discount percentage.  
+- **High-MRP products currently out of stock** to identify potential inventory issues.  
+- **Estimated revenue per category** based on available stock and discounted selling price.  
+- **Expensive products (MRP > ₹500) with minimal discounts** for pricing analysis.  
+- **Top 5 categories offering highest average discount** to evaluate promotions.  
+- **Price-per-gram calculation** to identify value-for-money products.  
+- **Weight-based categorization**: Low (<1kg), Medium (1–5kg), Bulk (>5kg).  
+- **Total inventory weight per category** to evaluate stock volume distribution.  
+
+These queries simulate real-world e-commerce analytics that a data analyst would perform to support decision-making.
+
+---
+
+## 📸 Project Screenshots & Sample Results
+
+*(Replace these placeholders with your screenshots of query results or dashboards)*  
+
+![Sample Query 1](images/sample_query_1.png)  
+*Top 10 best-value products*  
+
+![Sample Query 2](images/sample_query_2.png)  
+*Revenue per category*  
+
+---
+
+## 🚀 How to Use This Project
+
+1. Clone this repository:
+```bash
+git clone https://github.com/<your-username>/zepto-sql-portfolio.git
+cd zepto-sql-portfolio
+
